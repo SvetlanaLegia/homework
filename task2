@@ -1,0 +1,19 @@
+let accountStatus = 'premium'; // Можно поменять на 'extended', 'vip' или 'new'
+let username = 'Светлана';
+let cashbackPercentage = 10;   
+let finalStatus = 'regular';   
+
+if (accountStatus === 'extended') {
+    cashbackPercentage = 15;
+    finalStatus = 'extended';
+} else if (accountStatus === 'premium') {
+    cashbackPercentage = 20;
+    finalStatus = 'premium';
+} else if (accountStatus === 'vip') {
+    cashbackPercentage = 30;
+    finalStatus = 'vip';
+} 
+
+// Вывод результатов (строки вывода написаны только один раз, без дублирования в ветках)
+console.log(`${username} | ${finalStatus} аккаунт`);
+console.log(`Вы получаете ${cashbackPercentage} % с покупок на бонусный счёт`);
